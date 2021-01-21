@@ -1,20 +1,8 @@
 
-
-
-
-def take_a_number(katz_deli, name)
-
-  katz_deli.each_with_index { |name, index| puts
- "Welcome #{name}. You are number #{index} in line.""
-
-end
-
-
-
 def line(katz_deli)
   if katz_deli == []
   puts "The line is currently empty."
- else
+ else 
    current_line="The line is currently:"
    katz_deli.each_with_index do |person, index|
      current_line << " #{index+1}. #{person}"
@@ -23,10 +11,10 @@ def line(katz_deli)
  end
 end
 
-#def take_a_number(katz_deli, person)
-#  katz_deli << person
-#  puts "Welcome, #{person}. You are number #{katz_deli.size} in line."
-#end
+def take_a_number(katz_deli, person)
+  katz_deli << person
+  puts "Welcome, #{person}. You are number #{katz_deli.size} in line."
+end
 
 def now_serving(katz_deli)
   if katz_deli == []
@@ -34,4 +22,4 @@ def now_serving(katz_deli)
   else
     puts "Currently serving #{katz_deli.shift}."
   end
-end
+end 
